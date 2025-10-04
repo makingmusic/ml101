@@ -1,0 +1,29 @@
+# Python virtual environment
+myenv/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+# project specific
+tmp/
+logs/
+
+# IDE and Mac related
+*.swp
+.vscode/
+.DS_Store
+
+# Python
+__pycache__
+__pycache__/
+
+# node
+node_modules/
+build/
+dist/
+.npm/
+.cache/
+.tmp/
+package-lock.json
