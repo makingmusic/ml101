@@ -15,6 +15,8 @@ x, y = np.loadtxt("dataset/sales_tv.csv", delimiter=",", unpack=True)
 # plt.scatter(x, y)
 # plt.show()
 
+# visualization related functions
+
 
 def clear_screen():
     """Clear the terminal screen"""
