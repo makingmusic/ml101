@@ -19,5 +19,21 @@ def create_single_variable_linear_regression_dataset(filename, n_samples=100):
     print(f"Dataset saved to {filename}")
 
 
+def create_multiple_variable_linear_regression_dataset(filename, n_samples=100):
+    print(f"Creating multi-variable dataset with {n_samples} samples")
+    slopes = np.array([2.5, -1.1, 0.8])
+    intercept = 6
+    features = np.random.uniform(0, 100, size=(n_samples, slopes.size))
+    noise = np.random.normal(0, 2, size=n_samples)
+    target = features @ slopes + intercept + noise
+    np.savetxt(
+        filename,
+        np.column_stack((features, target)),
+        delimiter=",",
+        fmt="%.2f",
+    )
+    print(f"Dataset saved to {filename}")
+
 if __name__ == "__main__":
     create_single_variable_linear_regression_dataset("dataset/sales_tv.csv")
+    create_multiple_variable_linear_regression_dataset("dataset/sales_multi.csv")
