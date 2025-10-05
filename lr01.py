@@ -22,7 +22,6 @@ def clear_screen():
     """Clear the terminal screen"""
     os.system("cls" if os.name == "nt" else "clear")
 
-
 def print_training_header():
     """Print the header for the training visualization"""
     print("=" * 80)
