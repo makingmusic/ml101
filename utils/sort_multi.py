@@ -4,6 +4,8 @@ from pathlib import Path
 import numpy as np
 
 
+### CAUTION - not fully tested yet.
+
 def main() -> None:
     base_dir = Path(__file__).resolve().parent
     csv_path = base_dir.parent / "dataset" / "sales_multi.csv"
